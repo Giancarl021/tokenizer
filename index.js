@@ -2,7 +2,7 @@ const lineTokenizer = require('./src/line');
 
 module.exports = {
     parseCode(code) {
-        const lines = code.split('\n');
+        const lines = code.split(/\r?\n/g);
 
         const program = [];
 
